@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #D3D3D3;
+}
+
+ ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    opacity: 0.7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    padding-top: 2%;
+    color: darkgrey;
+    font-weight: 600;
+    /* Firefox */
+}
+
+ :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: darkgrey;
+    opacity: 0.7;
+    padding-top: 2%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+ ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: darkgrey;
+    padding-top: 2%;
+    opacity: 0.7;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.navbar {
+    top: 0%;
+    width: 100%;
+    height: 3.02em;
+    background-color: #D3D3D3;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    padding: 1em 0;
+    height: 3.02em;
+    position: fixed;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 0 16px;
+    font-size: 20px;
+    color: black;
+}
+
+#home:hover {
+    color: white;
+}
+
+#about:hover {
+    color: white;
+}
+
+#work:hover {
+    color: white;
+}
+
+#contect:hover {
+    color: white;
+}
+
+.content {
+    text-align: center;
+}
+
+.fa-book {
+    text-align: center;
+    float: left;
+    margin-left: 35%;
+}
+
+.background {
+    background-color: #D3D3D3;
+    height: 97%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.fsection {
+    background-color: black;
+    width: 80%;
+    height: 100%;
+    position: relative;
+    margin-left: 0;
+}
+
+.forground {
+    background-color: #ffffff;
+    position: absolute;
+    width: 75%;
+    height: 600px;
+    margin-top: 8%;
+    margin-left: 15%;
+    box-shadow: 1px 1px 14px 2px rgba(0, 0, 0, 0.68);
+    -webkit-box-shadow: 1px 1px 14px 2px rgba(0, 0, 0, 0.68);
+    -moz-box-shadow: 1px 1px 14px 2px rgba(0, 0, 0, 0.68);
+}
+
+.detail {
+    width: 65%;
+    height: 600px;
+    position: absolute;
+    display: block;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    background-color: #ffffff;
+}
+
+.detail div {
+    text-align: left;
+}
+
+.get-in-touch {
+    height: 100px;
+    margin-left: 6%;
+}
+
+.get-in-touch-pre {
+    width: 100%;
+    height: 25px;
+    font-size: 1.5pc;
+    color: #3e545e;
+    margin-top: 0%;
+    margin-left: 2%;
+}
+
+.get-in-touch h1 {
+    font-size: 35px;
+    margin-left: 28%;
+    color: #3e545e;
+    font-weight: lighter;
+    height: 20px;
+}
+
+.fname input {
+    margin-left: 11%;
+    width: 450px;
+    height: 3em;
+    background-color: hsla(240, 41%, 92%, 0.658);
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.msg textarea {
+    margin-left: 11%;
+    width: 450px;
+    height: 10em;
+    background-color: hsla(240, 41%, 92%, 0.658);
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.email input {
+    margin-left: 11%;
+    width: 450px;
+    height: 3em;
+    background-color: hsla(240, 41%, 92%, 0.658);
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.btn {
+    margin-left: 11%;
+    width: 35%;
+    height: 3.2em;
+    margin-top: 20px;
+}
+
+.btn button {
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    letter-spacing: 2px;
+    background-color: rgb(104, 100, 100);
+    outline: none;
+    font-weight: 700;
+    /* box-shadow: 1px 1px 34px -8px rgba(104, 100, 100, 0.85);
+    -webkit-box-shadow: 1px 1px 34px -8px rgba(104, 100, 100, 0.85);
+    -moz-box-shadow: 1px 1px 34px -8px rgba(104, 100, 100, 0.85); */
+}
+
+.box {
+    width: 35%;
+    height: 350px;
+    background-color: rgb(104, 100, 100);
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 150px;
+    box-shadow: 1px 1px 34px -8px rgba(104, 100, 100, 0.85);
+    -webkit-box-shadow: 1px 1px 34px -8px rgba(104, 100, 100, 0.85);
+    -moz-box-shadow: 1px 1px 34px -8px rgba(104, 100, 100, 0.85);
+}
+
+.contect h1 {
+    font-size: 32px;
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    margin-top: 50px;
+}
+
+.fa-instagram {
+    color: white;
+    font-size: 24px;
+    margin-left: 25%;
+    word-spacing: 2px;
+    margin-top: 20px;
+}
+
+#insta-pre {
+    display: inline;
+    font-size: 18px;
+}
+
+.fa-linkedin-in {
+    color: white;
+    font-size: 24px;
+    margin-left: 25%;
+    word-spacing: 2px;
+    margin-top: 25px;
+}
+
+#li-pre {
+    display: inline;
+    font-size: 18px;
+}
+
+.fa-github {
+    color: white;
+    font-size: 24px;
+    margin-left: 25%;
+    word-spacing: 2px;
+    margin-top: 25px;
+}
+
+#git-pre {
+    display: inline;
+    font-size: 18px;
+}
+
+@media only screen and (min-width: 375PX) {
+    body {
+        background-color: #D3D3D3;
+    }
+    .forground {
+        width: 100%;
+        height: 700px;
+        margin-top: 50px;
+    }
+    .detail {
+        width: 100%;
+    }
+    .box {
+        margin-top: 670px;
+        width: 100%;
+        margin-left: 15%;
+        height: 100px;
+    }
+    .contect h1 {
+        display: none;
+    }
+    .fname input {
+        width: 80%;
+    }
+    .email input {
+        width: 80%;
+    }
+    .msg textarea {
+        width: 80%;
+    }
+    .btn {
+        width: 40%;
+    }
+    .get-in-touch-pre {
+        font-size: 80%;
+        width: 100%;
+        text-align: center;
+        display: contents;
+    }
+    .get-in-touch h1 {
+        width: 30%;
+        font-size: 30px;
+        display: contents;
+        margin-top: 100px;
+    }
+    .get-in-touch {
+        margin-top: 60px;
+        width: 100%;
+        position: relative;
+        left: 2%;
+        display: block;
+    }
+    #insta-pre {
+        display: none;
+    }
+    #li-pre {
+        display: none;
+    }
+    #git-pre {
+        display: none;
+    }
+    .contect {
+        width: 100%;
+        height: 100px;
+    }
+    .fa-instagram {
+        margin-top: 50px;
+        margin-left: 30%;
+    }
+    .fa-linkedin-in {
+        margin-top: 50px;
+        margin-left: 10%;
+    }
+    .fa-github {
+        margin-top: 50px;
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (min-width: 736PX) {
+    .get-in-touch h1 {
+        font-size: 250%;
+    }
+    .get-in-touch-pre {
+        font-size: 120%;
+    }
+    .fa-instagram {
+        font-size: 200%;
+        margin-top: 30px;
+        margin-left: 32%;
+    }
+    .fa-github {
+        font-size: 200%;
+        margin-top: 30px;
+    }
+    .fa-linkedin-in {
+        font-size: 200%;
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 960PX) {
+    .forground {
+        background-color: #ffffff;
+        position: absolute;
+        width: 95%;
+        height: 650px;
+        margin-top: 8%;
+        margin-left: 5%;
+        box-shadow: 1px 1px 14px 2px rgba(0, 0, 0, 0.68);
+        -webkit-box-shadow: 1px 1px 14px 2px rgba(0, 0, 0, 0.68);
+        -moz-box-shadow: 1px 1px 14px 2px rgba(0, 0, 0, 0.68);
+    }
+    .detail {
+        width: 65%;
+        height: 600px;
+        position: absolute;
+        display: block;
+        color: black;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        background-color: #ffffff;
+    }
+    .detail div {
+        text-align: left;
+    }
+    .get-in-touch {
+        height: 100px;
+        margin-left: 6%;
+    }
+    .get-in-touch-pre {
+        width: 100%;
+        height: 25px;
+        font-size: 1.5pc;
+        color: #3e545e;
+        margin-top: 0%;
+        margin-left: 2%;
+    }
+    .get-in-touch h1 {
+        font-size: 35px;
+        margin-left: 28%;
+        color: #3e545e;
+        font-weight: lighter;
+        height: 20px;
+    }
+    .fname input {
+        margin-left: 11%;
+        width: 450px;
+        height: 3em;
+        background-color: hsla(240, 41%, 92%, 0.658);
+        margin-top: 20px;
+        outline: none;
+        border: none;
+        color: black;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+    }
+    .msg textarea {
+        margin-left: 11%;
+        width: 450px;
+        height: 10em;
+        background-color: hsla(240, 41%, 92%, 0.658);
+        margin-top: 20px;
+        outline: none;
+        border: none;
+        color: black;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+    }
+    .email input {
+        margin-left: 11%;
+        width: 450px;
+        height: 3em;
+        background-color: hsla(240, 41%, 92%, 0.658);
+        margin-top: 20px;
+        outline: none;
+        border: none;
+        color: black;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+    }
+    .btn {
+        margin-left: 11%;
+        width: 35%;
+        height: 3.2em;
+        margin-top: 20px;
+    }
+    .btn button {
+        border: 0;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        width: 100%;
+        height: 100%;
+        font-size: 18px;
+        letter-spacing: 2px;
+        background-color: rgb(104, 100, 100);
+        outline: none;
+        font-weight: 700;
+        /* box-shadow: 1px 1px 34px -8px rgba(104, 100, 100, 0.85);
+        -webkit-box-shadow: 1px 1px 34px -8px rgba(104, 100, 100, 0.85);
+        -moz-box-shadow: 1px 1px 34px -8px rgba(104, 100, 100, 0.85); */
+    }
+    .box {
+        width: 45%;
+        height: 350px;
+        background-color: rgb(104, 100, 100);
+        position: absolute;
+        left: 62%;
+        margin-top: 200px;
+        box-shadow: 1px 1px 34px -8px rgba(104, 100, 100, 0.85);
+        -webkit-box-shadow: 1px 1px 34px -8px rgba(104, 100, 100, 0.85);
+        -moz-box-shadow: 1px 1px 34px -8px rgba(104, 100, 100, 0.85);
+    }
+    .contect h1 {
+        font-size: 32px;
+        text-align: center;
+        color: white;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        margin-top: 50px;
+        display: block;
+    }
+    .fa-instagram {
+        color: white;
+        font-size: 24px;
+        margin-left: 25%;
+        word-spacing: 2px;
+        margin-top: 20px;
+    }
+    #insta-pre {
+        display: inline;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .fa-linkedin-in {
+        color: white;
+        font-size: 24px;
+        margin-left: 25%;
+        word-spacing: 2px;
+        margin-top: 25px;
+    }
+    #li-pre {
+        display: inline;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .fa-github {
+        color: white;
+        font-size: 24px;
+        margin-left: 25%;
+        word-spacing: 2px;
+        margin-top: 25px;
+    }
+    #git-pre {
+        display: inline;
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+@media only screen and (min-width:1181px) {
+    .detail {
+        width: 100%;
+    }
+    .box {
+        width: 35%;
+    }
+    .forground {
+        width: 80%;
+        margin-left: 20%;
+        margin-top: 80px;
+    }
+    .btn {
+        width: 20%;
+    }
+}

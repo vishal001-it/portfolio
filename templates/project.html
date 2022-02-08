@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../static/css/project.css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='../static/images/fevicon.PNG') }}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="menu">
+            <a href="./home.html">Home</a>
+            <a href="./skill.html">Skills</a>
+            <a href="./project.html">Projects</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    </div>
+    <div class="forground">
+        <h1>Projects</h1>
+        <div class="project-selection">
+            <div class="button">
+                <div class="img-container" onclick="document.getElementById('modal-wrepper1').style.display='flex'">
+                    <img src=" ../static/images/c.jpg " alt=" ">
+                </div>
+                <h2>Airport Sheduling</h2>
+            </div>
+            <div class="button ">
+                <div class="img-container" onclick="document.getElementById('modal-wrepper2').style.display='flex'">
+                    <img src="../static/images/py.png " alt=" ">
+                </div>
+                <h2>Web Development</h2>
+            </div>
+            <div class="button ">
+                <div class="img-container" onclick="document.getElementById('modal-wrepper3').style.display='flex'">
+                    <img src="../static/images/web-server.png " alt=" ">
+                </div>
+                <h2>Web Server Deployment</h2>
+            </div>
+            <div class="button" style="height: 0; width: 0; pointer-events: none; ">
+                <div class="img-container ">
+                    <img src="./image/py.png " alt=" ">
+                </div>
+            </div>
+            <div class="button " style="height: 0;width: 0; pointer-events: none; ">
+                <div class="img-container ">
+                    <img src="./image/py.png " alt=" ">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal1" id="modal-wrepper1">
+        <div class="imgcontainer ">
+            <span id="close " class="close " onclick="document.getElementById( 'modal-wrepper1').style.display='none' " title="Close PopUp ">X</span>
+            <img src="../static/images/c.jpg  " class="avatar " alt=" ">
+            <h1 class="project-details "> Project Details </h1>
+            <p style="border-bottom: solid 1px; font-weight: 600; ">Airport Sheduling</p>
+            <p> Airport flight sheduling project using C programming with GUI interfce in CMD </p>
+            <p><a href="">Github-link</a></p>
+        </div>
+    </div>
+    <div class="modal2" id="modal-wrepper2">
+        <div class="imgcontainer ">
+            <span id="close " class="close " onclick="document.getElementById( 'modal-wrepper2').style.display='none' " title="Close PopUp ">X</span>
+            <img src="../static/images/py.png" class="avatar " alt=" ">
+            <h1 class="project-details "> Project Details </h1>
+            <p style="border-bottom: solid 1px; font-weight: 600; ">Python Web Development</p>
+            <p> I build this website using Python Flask as a backend language</p>
+            <p><a href=" ">Github-link</a></p>
+        </div>
+    </div>
+    <div class="modal3" id="modal-wrepper3">
+        <div class="imgcontainer ">
+            <span id="close " class="close " onclick="document.getElementById( 'modal-wrepper3').style.display='none' " title="Close PopUp ">X</span>
+            <img src="../static/images/web-server.png " class="avatar " alt=" ">
+            <h1 class="project-details "> Project Details </h1>
+            <p style="border-bottom: solid 1px; font-weight: 600; ">Web Server Deployment</p>
+            <p> I build an Ubantu web-server using apache2 , php and mysql and routed using the public IP. </p>
+            <p><a href=" ">Github-link</a></p>
+        </div>
+    </div>
+    <script src="project.js "></script>
+</body>
+
+</html>

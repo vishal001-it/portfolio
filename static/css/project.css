@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #d8d8d8;
+    /* #f7f6ed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    top: 0%;
+    width: 100%;
+    height: 3.02em;
+    background-color: #D3D3D3;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    padding: 1em 0;
+    height: 3.02em;
+    position: fixed;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 0 16px;
+    font-size: 20px;
+    color: black;
+}
+
+.menu a:hover {
+    color: white;
+}
+
+.forground {
+    width: 60%;
+    height: 80%;
+    top: 15vh;
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.forground h1 {
+    position: fixed;
+    top: 7%;
+    color: #3a3a3a;
+}
+
+.project-selection {
+    background-color: #282828;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: #4d4d4d;
+    width: 100%;
+    height: 80%;
+    border-radius: 5px;
+}
+
+.img-container {
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button h2 {
+    text-align: center;
+    padding-top: 2%;
+    color: #f4f4f4;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.button img {
+    width: 100%;
+    height: 100%;
+}
+
+.imgcontainer {
+    position: relative;
+    width: 25%;
+    height: 55vh;
+    background-color: white;
+    text-align: center;
+    padding: 0 4%;
+    animation: zoom 0.6s;
+    border-radius: 5px;
+}
+
+.button1 {
+    background-color: #5cb85c;
+    width: 100%;
+    height: 80%;
+    border-radius: 5px;
+}
+
+.button2 {
+    background-color: #5cb85c;
+    width: 100%;
+    height: 60%;
+    border-radius: 5px;
+}
+
+.close {
+    margin: 0 0 0 115%;
+    padding: 0;
+    font-size: 25px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+}
+
+.imgcontainer img {
+    width: 80%;
+    height: 20vh;
+}
+
+.project-details {
+    width: 100%;
+    border-bottom: solid 1px;
+}
+
+.modal1 {
+    width: 100%;
+    height: 120%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal2 {
+    width: 100%;
+    height: 120%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal3 {
+    width: 100%;
+    height: 120%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 3;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+@media only screen and (min-width: 375PX) {
+    .forground {
+        width: 90%;
+        height: 150vh;
+    }
+    .forground h1 {
+        z-index: -1;
+    }
+    .project-selection {
+        height: 140vh;
+        grid-template-columns: 80%;
+        grid-template-rows: 30% 30% 30%;
+    }
+    .navbar a {
+        padding-left: 8%;
+    }
+    .imgcontainer {
+        width: 80%;
+    }
+    .close {
+        margin: 0 0 0 98%;
+    }
+}
+
+@media only screen and (min-width: 592PX) {
+    .forground {
+        width: 90%;
+        height: 80vh;
+    }
+    .forground h1 {
+        z-index: -1;
+    }
+    .project-selection {
+        height: 100%;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 40% 40%;
+    }
+    .navbar a {
+        padding-left: 4%;
+    }
+    .imgcontainer {
+        width: 60%;
+    }
+    .close {
+        margin: 0 0 0 98%;
+    }
+}
+
+@media only screen and (min-width: 775PX) {
+    .imgcontainer {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 975PX) {
+    .forground {
+        width: 90%;
+        height: 80vh;
+    }
+    .forground h1 {
+        z-index: -1;
+    }
+    .project-selection {
+        height: 100%;
+        grid-template-columns: 25% 25% 25%;
+        grid-template-rows: auto;
+    }
+    .navbar a {
+        padding-left: 4%;
+    }
+    .imgcontainer {
+        width: 25%;
+    }
+    .close {
+        margin: 0 0 0 105%;
+    }
+}
+
+@media only screen and (min-width:977px) {
+    .imgcontainer {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width:1009px) {
+    .imgcontainer {
+        width: 40%;
+    }
+    .close {
+        margin: 0 0 0 105%;
+    }
+}
+
+@media only screen and (min-width:1276px) {
+    .imgcontainer {
+        width: 30%;
+    }
+    .close {
+        margin: 0 0 0 108%;
+    }
+}
